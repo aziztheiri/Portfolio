@@ -1,0 +1,125 @@
+/* Custom styles for the project cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Animation when cards come into view */
+.animate__fadeInUp {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.thumbnail {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.thumbnail.active {
+  border-color: #007bff;
+}
+
+.thumbnail:hover {
+  border-color: #0056b3;
+}
+
+.slideshow {
+  position: relative;
+  display: inline-block; /* Ensures the image fits the container width */
+  height: 200px; /* Set a fixed height (adjust as necessary for your design) */
+  overflow: hidden; /* Hide parts of the image that exceed the container */
+}
+
+.slideshow img {
+  width: 100%; /* Ensures the image fits the container width */
+  height: 100%; /* Makes sure the image fills the container's height */
+  
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Add smooth transition */
+}
+
+/* Hover effect on images */
+.slideshow img:hover {
+  cursor: pointer; /* Shows pointer to indicate it's clickable */
+  transform: scale(1.05); /* Slight zoom effect */
+  opacity: 0.9; /* Slightly fade the image to show interactivity */
+}
+
+/* General styles for buttons */
+.prev-button,
+.next-button {
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for elegance */
+  border: none;
+  border-radius: 50%; /* Makes the button circular */
+  padding: 8px; /* Adjust the padding for smaller size */
+  z-index: 10;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+/* Left button positioning */
+.prev-button {
+  left: 10px;
+}
+
+/* Right button positioning */
+.next-button {
+  right: 10px;
+}
+
+/* Icon styling */
+.prev-button i,
+.next-button i {
+  font-size: 18px; /* Adjust icon size */
+  color: white; /* Set icon color to white */
+}
+
+/* Hover effects */
+.prev-button:hover,
+.next-button:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Light background on hover */
+  opacity: 1;
+}
+
+.prev-button:hover i,
+.next-button:hover i {
+  color: black; /* Change icon color on hover */
+}

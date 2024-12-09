@@ -1,0 +1,31 @@
+/* Social Icon Styling */
+.social-icon {
+    width: 60px; /* Adjust size of the icon */
+    height: 50px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2); /* Slight zoom effect */
+    filter: brightness(1.2); /* Slight brightness increase on hover */
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #f8f9fa; /* Light background for footer */
+  }
+  
+  footer .text-dark {
+    color: #333 !important;
+  }
+  
+  footer .footer {
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9rem;
+  }
+  
+  footer .mx-3 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  

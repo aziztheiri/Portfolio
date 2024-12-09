@@ -1,0 +1,43 @@
+/* Optional: Image container style */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInLeft 1s ease-out;
+  }
+  
+  /* Smooth fade-in effect for text */
+  .text-container {
+    animation: fadeInRight 1s ease-out;
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Ensuring image is responsive and round */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  

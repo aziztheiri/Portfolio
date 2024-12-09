@@ -1,0 +1,291 @@
+<section id="projects" class="container mt-5">
+  <h2 class="text-center mb-4">My Projects</h2>
+  <div class="row">
+        <!-- Project Card 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-lg rounded animate__animated animate__fadeInUp">
+        <div class="slideshow">
+          <img
+            *ngFor="let image of project3Images; let i = index"
+            [src]="image"
+            class="card-img-top"
+            alt="Project 3"
+            (click)="openLightbox(i, 3)" 
+          />
+        </div>
+  
+        <div class="card-body">
+          <h5 class="card-title">Event Management Application</h5>
+          <p class="card-text">
+            This project is an event management platform built using 
+            <strong>Spring Boot</strong> and <strong>Spring Security JWT Authentication</strong>. 
+            It features both <strong>admin</strong> and <strong>client</strong> interfaces, streamlining event creation, 
+            management, and participation.
+          </p>
+        
+          <p class="card-text">
+            <strong>Key Features:</strong>
+            <ul>
+              <li><strong>User Management:</strong></li>
+              <ul>
+                <li>Secure registration and login with JWT authentication</li>
+                <li>Role-based access control for admins and clients</li>
+              </ul>
+        
+              <li><strong>Event Management:</strong></li>
+              <ul>
+                <li>Admin dashboard for managing events and users</li>
+                <li>Event creation, updates, and deletion</li>
+                <li>Event registration and participation for clients</li>
+                <li>Event search and filtering</li>
+              </ul>
+              <li><strong>Notification Management:</strong></li>
+              <ul>
+                <li>Notification pop up when event is added</li>
+                <li>Notification deletion</li>
+              </ul>
+            </ul>
+       
+        
+          <p><strong>Technologies:</strong> Spring Boot,Spring Data JPA, Spring Security, JWT, Thymeleaf,</p>
+         
+        </div>
+        
+        <div class="d-flex justify-content-center m-3">
+          <div class="alert alert-secondary text-center shadow-sm rounded" role="alert" style="max-width: 300px;">
+            <i class="bi bi-lock-fill text-dark" style="font-size: 1.5rem;"></i>
+            <h6 class="mt-2 mb-1">Private Repository</h6>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-lg rounded animate__animated animate__fadeInUp">
+        <div class="slideshow">
+          <img
+            *ngFor="let image of project1Images; let i = index"
+            [src]="image"
+            class="card-img-top"
+            alt="Project 1"
+            (click)="openLightbox(i, 1)"  
+          />
+        </div>
+  
+       
+      <div class="card-body">
+        <h5 class="card-title">TrashArt Desktop Application</h5>
+        <p class="card-text">
+          This project was developed as a desktop application using <strong>JavaFX</strong>. 
+          It targets artists practicing <strong>TrashArt</strong>, enabling them to upload creations made from recyclable materials. 
+          The application features a points system and merchandise rewards for eco-friendly practices.
+        </p>
+
+        <p class="card-text">
+          <strong>My Role:</strong> Developing the <strong>Art Section</strong> with features like:
+          <ul>
+            <li>Search and filter options for artworks</li>
+            <li>Sorting by popularity, date, or materials</li>
+            <li>Donation system to support artists</li>
+            <li>AI-powered product comparison</li>
+          </ul>
+        
+        
+        <p><strong>Technologies:</strong> JavaFX, AI Integration, Backend & Frontend Development</p>
+     
+          
+          <div class="d-flex justify-content-center">
+            <a href="https://github.com/yourusername/project1" class="btn btn-dark" target="_blank">
+              <i class="bi bi-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+          <!-- Project Card 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-lg rounded animate__animated animate__fadeInUp">
+        <div class="slideshow">
+          <img
+            *ngFor="let image of project2Images; let i = index"
+            [src]="image"
+            class="card-img-top"
+            alt="Project 1"
+            (click)="openLightbox(i, 2)"  
+          />
+        </div>
+
+
+     
+        <div class="card-body">
+          <h5 class="card-title">University & Student Management System</h5>
+          <p class="card-text">
+            This project manages university operations, including students, dormitories, and reservations. 
+            It facilitates creating and updating student profiles, managing dormitories, assigning rooms, and handling student reservations.
+          </p>
+  
+          <p class="card-text">
+            <strong>Key Features:</strong>
+            <ul>
+              <li>Manage student profiles and information</li>
+              <li>Assign dormitories and rooms</li>
+              <li>Track room reservations</li>
+              <li>University and dormitory relationship management</li>
+            </ul>
+       
+  
+          <p><strong>Technologies:</strong> Spring Boot, Spring Data JPA, REST API</p>
+      
+    
+     
+          
+          <div class="d-flex justify-content-center">
+            <a href="https://github.com/yourusername/project1" class="btn btn-dark" target="_blank">
+              <i class="bi bi-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Project Card 1 -->
+<div class="col-md-4 mb-4">
+  <div class="card shadow-lg rounded animate__animated animate__fadeInUp">
+    <div class="slideshow">
+      <img
+        *ngFor="let image of project4Images; let i = index"
+        [src]="image"
+        class="card-img-top"
+        alt="Project 4"
+        (click)="openLightbox(i, 4)" 
+      />
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title">End of Bachelor's Study Project</h5>
+      <p class="card-text">
+        This project was part of my Bachelor's degree and involved developing a data management solution for a subsidiary of <strong>Groupe La Poste</strong>.
+        It included tasks such as processing and cleaning data from <strong>.csv</strong> and <strong>.pos</strong> formats using <strong>Talend Data Integration</strong>.
+      </p>
+      
+      <p class="card-text">
+        <strong>Key Features:</strong>
+        <ul>
+          <li><strong>Data Processing & Cleaning:</strong> Cleaning and transforming raw data for better usability</li>
+          <li><strong>Dynamic Dashboards:</strong> Creating interactive and dynamic dashboards with <strong>PowerBI</strong></li>
+          <li><strong>Chatbot Development:</strong> Designing a chatbot to assist users in data visualization tasks</li>
+        </ul>
+    
+      
+      <p><strong>Technologies:</strong> Talend Data Integration, PowerBI,MySQL, Power Virtual Agents,Power Apps,Power Automate</p>
+    </div>
+    
+    <div class="d-flex justify-content-center m-3">
+      <div class="alert alert-secondary text-center shadow-sm rounded" role="alert" style="max-width: 300px;">
+        <i class="bi bi-lock-fill text-dark" style="font-size: 1.5rem;"></i>
+        <h6 class="mt-2 mb-1">Private Repository</h6>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Project Card 5 -->
+<div class="col-md-4 mb-4">
+  <div class="card shadow-lg rounded animate__animated animate__fadeInUp">
+    <div class="slideshow">
+      <img
+        *ngFor="let image of project5Images; let i = index"
+        [src]="image"
+        class="card-img-top"
+        alt="Project 5"
+        (click)="openLightbox(i, 5)" 
+      />
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title">TrashArt Web Application with Symfony</h5>
+      <p class="card-text">
+        This project is a web-based version of my <strong>TrashArt</strong> application, developed using the <strong>Symfony framework</strong>. 
+        It mirrors the core functionality of the JavaFX desktop application but with a full web interface.
+      </p>
+      
+      <p class="card-text">
+        <strong>Key Features:</strong>
+        <ul>
+          <li><strong>Web-based Application:</strong> A fully functional web app developed with Symfony to manage eco-friendly art and create a platform for users to upload their TrashArt creations.</li>
+          <li><strong>User Interactions:</strong> Similar to the JavaFX version, it allows users to deposit their artworks, manage collections, and interact with others.</li>
+          <li><strong>Integration of Points System and Rewards:</strong> Implemented the same point system and rewards for eco-friendly art promotion.</li>
+        </ul>
+      
+      
+      <p><strong>Technologies:</strong> Symfony, Twig, MySQLI</p>
+    </div>
+    
+    <div class="d-flex justify-content-center m-3">
+      <div class="alert alert-secondary text-center shadow-sm rounded" role="alert" style="max-width: 300px;">
+        <i class="bi bi-lock-fill text-dark" style="font-size: 1.5rem;"></i>
+        <h6 class="mt-2 mb-1">Private Repository</h6>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Project Card 6 -->
+<!-- Project Card 6 -->
+<div class="col-md-4 mb-4">
+  <div class="card shadow-lg rounded animate__animated animate__fadeInUp">
+    <div class="slideshow">
+      <img
+        *ngFor="let image of project6Images; let i = index"
+        [src]="image"
+        class="card-img-top"
+        alt="Project 6"
+        (click)="openLightbox(i, 6)" 
+      />
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title">Airport Management System</h5>
+      <p class="card-text">
+        This project is an <strong>Airport Management System</strong> built using <strong>ASP .NET (C#)</strong> for the backend and <strong>SQL Server</strong> for the database. 
+        The application facilitates the management of various airport operations, such as handling planes, flights, passengers, and ticket management.
+      </p>
+
+      <p class="card-text">
+        <strong>Key Features:</strong>
+        <ul>
+          <li><strong>Planes Management:</strong> CRUD operations for managing airplane details including models, capacity, and status.</li>
+          <li><strong>Flights Management:</strong> Ability to add, update, and delete flight schedules, including destinations, timings, and statuses.</li>
+          <li><strong>Passenger Management:</strong> Manage passenger information, including personal details, and booking history.</li>
+          <li><strong>Ticket Management:</strong> Implementation of CRUD operations for creating and managing flight tickets.</li>
+          <li><strong>Simple Airport Operations:</strong> Basic functionalities for airport management such as flight booking, ticket reservation, and viewing schedules.</li>
+        </ul>
+
+
+      <p><strong>Technologies:</strong> ASP .NET (C#), SQL Server, Entity Framework</p>
+    </div>
+    
+    <div class="d-flex justify-content-center m-3">
+      <a href="https://github.com/yourusername/project6" class="btn btn-dark" target="_blank">
+        <i class="bi bi-github"></i> View on GitHub
+      </a>
+    </div>
+  </div>
+</div>
+
+</div>
+</section>
+
+<!-- Lightbox Modal -->
+<div class="modal" tabindex="-1" [ngClass]="{ 'd-block': isModalOpen }" (click)="closeLightbox()">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img [src]="currentImage" class="img-fluid" alt="Enlarged Project Image" />
+        <button class="btn btn-dark position-absolute prev-button" (click)="previousImage($event)">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+        <button class="btn btn-dark position-absolute next-button" (click)="nextImage($event)">
+          <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
