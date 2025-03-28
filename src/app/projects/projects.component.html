@@ -1,6 +1,55 @@
 <section id="projects" class="container mt-5">
-  <h2 class="text-center mb-4">My Projects</h2>
+  <h2 class="text-center pt-5">My Projects</h2>
   <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-lg rounded animate__animated animate__fadeInUp">
+        <div class="slideshow">
+          <img
+            *ngFor="let image of project7Images; let i = index"
+            [src]="image"
+            class="card-img-top"
+            alt="Project 7"
+            (click)="openLightbox(i, 7)" 
+          />
+        </div>
+    
+        <div class="card-body">
+          <h5 class="card-title">Magharebia Insurance Website Renovation</h5>
+          <p class="card-text">
+            This project represents a complete renovation of the Magharebia Insurance Website, built with a robust microservices architecture using <strong>Spring Boot</strong> for backend services and <strong>Angular</strong> for the frontend. The goal was to modernize the platform, enhance scalability, and streamline complex operations within the insurance domain.
+          </p>
+          <p class="card-text">
+            <strong>Key Features:</strong>
+            <ul>
+              <li>
+                <strong>User Management Service:</strong> Developed a comprehensive user management module that handles registration, authentication, profile management, password reset, and account activation/deactivation. Integrated with external identity providers for enhanced security.
+              </li>
+              <li>
+                <strong>Microservices Integration:</strong> Leveraged RESTful APIs and RabbitMQ for asynchronous communication between services, ensuring reliable and scalable inter-service operations.
+              </li>
+              <li>
+                <strong>Enhanced Security:</strong> Implemented industry-standard security practices including BCrypt for password hashing, token-based validations, and multi-channel notifications (email and SMS) for critical account actions.
+              </li>
+              <li>
+                <strong>AI-Powered Client Segmentation:</strong> Designed and deployed an AI model to segment clients using advanced clustering and classification algorithms. This model tested multiple algorithms to select the most efficient strategy for predicting client clusters, enabling personalized insurance offerings.
+              </li>
+              <li>
+                <strong>Cloud Integration:</strong> Integrated Cloudinary for efficient image management and leveraged cloud services to enhance system performance and scalability.
+              </li>
+            </ul>
+          <p>
+            <strong>Technologies:</strong> Spring Boot, Angular, RabbitMQ, Keycloak, BCrypt, Cloudinary, AI/ML (clustering and classification)
+          </p>
+        </div>
+        
+        <div class="d-flex justify-content-center m-3">
+          <div class="alert alert-secondary text-center shadow-sm rounded" role="alert" style="max-width: 300px;">
+            <i class="bi bi-lock-fill text-dark" style="font-size: 1.5rem;"></i>
+            <h6 class="mt-2 mb-1">Private Repository</h6>
+          </div>
+        </div>
+    </div>
+    </div>
         <!-- Project Card 3 -->
     <div class="col-md-4 mb-4">
       <div class="card shadow-lg rounded animate__animated animate__fadeInUp">
@@ -64,6 +113,54 @@
       <div class="card shadow-lg rounded animate__animated animate__fadeInUp">
         <div class="slideshow">
           <img
+            *ngFor="let image of project8Images; let i = index"
+            [src]="image"
+            class="card-img-top"
+            alt="Project 6"
+            (click)="openLightbox(i, 8)" 
+          />
+        </div>
+    
+        <div class="card-body">
+          <h5 class="card-title">Hotel Management System</h5>
+          <p class="card-text">
+            The Hotel Management System is a comprehensive platform designed to streamline hotel operations and enhance guest experiences. Built using <strong>Spring Boot</strong> and <strong>Angular</strong>  , this system efficiently manages room listings, user authentication, and booking processes, ensuring smooth operations from both administrative and customer perspectives.
+          </p>
+          <p class="card-text">
+            <strong>Key Features:</strong>
+            <ul>
+              <li>
+                <strong>Room Management:</strong> Empower administrators with full CRUD capabilities to manage room details, including names, types, pricing, and availability. Integrated with <strong>Cloudinary</strong> for efficient image uploads and storage.
+              </li>
+              <li>
+                <strong>User Authentication:</strong> Secure user registration and login processes, featuring role-based access control and encrypted passwords using <strong>BCrypt</strong>.
+              </li>
+              <li>
+                <strong>Reservation System:</strong> Seamless booking functionality that handles reservations, calculates pricing based on stay duration, and updates room availability in real time.
+              </li>
+              <li>
+                <strong>Administrative Tools:</strong> Provides robust dashboards for monitoring reservations, updating room statuses, and managing user profiles to ensure optimal operational control.
+              </li>
+            </ul>
+          <p>
+            <strong>Technologies:</strong> Spring Boot, Spring Data JPA, Cloudinary, BCrypt, RESTful APIs, JWT.
+          </p>
+        </div>
+        
+        
+        <div class="d-flex justify-content-center m-3">
+          <a href="https://github.com/aziztheiri/HotelManagementBack.git" class="btn btn-dark" target="_blank">
+            <i class="bi bi-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-lg rounded animate__animated animate__fadeInUp">
+        <div class="slideshow">
+          <img
             *ngFor="let image of project1Images; let i = index"
             [src]="image"
             class="card-img-top"
@@ -95,7 +192,7 @@
      
           
           <div class="d-flex justify-content-center">
-            <a href="https://github.com/yourusername/project1" class="btn btn-dark" target="_blank">
+            <a href="https://github.com/aziztheiri/JavaFX_Desktop_App.git" class="btn btn-dark" target="_blank">
               <i class="bi bi-github"></i> View on GitHub
             </a>
           </div>
@@ -140,7 +237,7 @@
      
           
           <div class="d-flex justify-content-center">
-            <a href="https://github.com/yourusername/project1" class="btn btn-dark" target="_blank">
+            <a href="https://github.com/aziztheiri/FirstSpringProject.git" class="btn btn-dark" target="_blank">
               <i class="bi bi-github"></i> View on GitHub
             </a>
           </div>
@@ -263,7 +360,7 @@
     </div>
     
     <div class="d-flex justify-content-center m-3">
-      <a href="https://github.com/yourusername/project6" class="btn btn-dark" target="_blank">
+      <a href="https://github.com/aziztheiri/AirportManagement.git" class="btn btn-dark" target="_blank">
         <i class="bi bi-github"></i> View on GitHub
       </a>
     </div>

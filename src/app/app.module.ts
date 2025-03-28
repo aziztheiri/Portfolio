@@ -8,7 +8,6 @@ import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
-import { ResumeComponent } from './resume/resume.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient } from '@angular/common/http';
@@ -21,8 +20,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HeaderComponent,
     AboutComponent,
     ProjectsComponent,
-    FooterComponent,
-    ResumeComponent
+    FooterComponent
   ],
   imports: [
     TranslateModule.forRoot({

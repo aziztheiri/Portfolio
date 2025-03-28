@@ -52,7 +52,20 @@ export class ProjectsComponent {
     'assets/images/f5.png'
   
   ];
-
+  project7Images: string[] = [
+    'assets/images/x1.png',
+    'assets/images/x2.png',
+    'assets/images/x3.png',
+    'assets/images/x4.png',
+    'assets/images/claim1.jpg',
+    'assets/images/claim2.jpg'
+  ];
+  project8Images: string[] = [
+    'assets/images/y1.png',
+    'assets/images/y2.png',
+    'assets/images/y3.png',
+    'assets/images/y4.png',
+  ];
 
   currentImageIndex: number = 0;
   currentImage: string = '';
@@ -77,6 +90,12 @@ export class ProjectsComponent {
     }
     else if (project === 6) {
       this.currentImage = this.project6Images[index];
+    }
+    else if (project === 7) {
+      this.currentImage = this.project7Images[index];
+    }
+    else if (project === 8) {
+      this.currentImage = this.project8Images[index];
     }
   }
   
@@ -112,6 +131,14 @@ export class ProjectsComponent {
         this.currentImageIndex = (this.currentImageIndex + 1) % this.project6Images.length;
         this.currentImage = this.project6Images[this.currentImageIndex];
       }
+      else if (this.currentImage === this.project7Images[this.currentImageIndex]) {
+        this.currentImageIndex = (this.currentImageIndex + 1) % this.project7Images.length;
+        this.currentImage = this.project7Images[this.currentImageIndex];
+      }
+      else if (this.currentImage === this.project8Images[this.currentImageIndex]) {
+        this.currentImageIndex = (this.currentImageIndex + 1) % this.project8Images.length;
+        this.currentImage = this.project8Images[this.currentImageIndex];
+      }
     }
   }
   
@@ -146,6 +173,16 @@ export class ProjectsComponent {
         this.currentImageIndex =
           (this.currentImageIndex - 1 + this.project6Images.length) % this.project6Images.length;
         this.currentImage = this.project6Images[this.currentImageIndex];
+      }
+      else if (this.currentImage === this.project7Images[this.currentImageIndex]) {
+        this.currentImageIndex =
+          (this.currentImageIndex - 1 + this.project7Images.length) % this.project7Images.length;
+        this.currentImage = this.project7Images[this.currentImageIndex];
+      }
+      else if (this.currentImage === this.project8Images[this.currentImageIndex]) {
+        this.currentImageIndex =
+          (this.currentImageIndex - 1 + this.project8Images.length) % this.project8Images.length;
+        this.currentImage = this.project8Images[this.currentImageIndex];
       }
     }
   }
