@@ -1,159 +1,100 @@
-/* Custom Navbar CSS */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-:root {
-  --primary-color: #2a2a72;
-  --secondary-color: #009ffd;
-  --text-color: #f8f9fa;
-  --hover-color: #ff0076;
-  --bg-gradient: linear-gradient(45deg, #2a2a72 0%, #009ffd 100%);
-}
-
+/* Enhanced Navbar Styling */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Use Poppins for a modern look */
+body {
   font-family: 'Poppins', sans-serif;
 }
 
+/* Navbar Container */
 .navbar {
-  background: var(--bg-gradient);
-  padding: 1rem 2rem;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
-
-.navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.navbar-brand a {
+/* Logo Styling */
+.navbar-logo a {
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.logo-text {
-  color: var(--text-color);
   font-size: 1.8rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
+  font-weight: 600;
+  color: #fff;
+  transition: transform 0.3s ease;
 }
 
-.logo-loader {
-  width: 8px;
-  height: 8px;
-  background: var(--hover-color);
-  margin-left: 8px;
-  border-radius: 50%;
-  animation: pulse 1.5s infinite;
+.navbar-logo a:hover {
+  transform: scale(1.05);
 }
 
-@keyframes pulse {
-  0% { transform: scale(0.8); }
-  50% { transform: scale(1.2); }
-  100% { transform: scale(0.8); }
-}
-
-.nav-list {
+/* Links Container Styling */
+.navbar-links {
   display: flex;
-  gap: 2rem;
-  list-style: none;
+  gap: 1rem;
 }
 
-.nav-link {
-  color: var(--text-color);
+/* Link Styling */
+.navbar-links a {
   text-decoration: none;
-  font-weight: 500;
-  position: relative;
-  padding: 0.5rem 0;
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.link-border {
-  width: 0;
-  height: 2px;
-  background: var(--hover-color);
-  transition: width 0.3s ease;
+.navbar-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
 }
 
-.nav-link:hover .link-border,
-.nav-link.active .link-border {
-  width: 100%;
+/* Button-Specific Styles */
+.btn {
+  font-weight: 600;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
 }
 
-.nav-link:hover {
-  color: var(--hover-color);
+.login-btn {
+  background-color: #007BFF;
+  color: #fff;
 }
 
-/* Hamburger Menu */
-.hamburger {
-  display: none;
-  cursor: pointer;
-  z-index: 1001;
+.login-btn:hover {
+  background-color: #0056b3;
 }
 
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  background: var(--text-color);
-  transition: all 0.3s ease;
+.signup-btn {
+  background-color: #28a745;
+  color: #fff;
 }
 
-/* Mobile View */
+.signup-btn:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .navbar {
-    padding: 1rem;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
-  .nav-list {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    gap: 0;
     flex-direction: column;
-    background: var(--bg-gradient);
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
     width: 100%;
-    text-align: center;
-    transition: 0.3s;
-    padding: 1rem 0;
+    margin-top: 1rem;
   }
 
-  .nav-list.active {
-    left: 0;
-  }
-
-  .nav-item {
-    margin: 1rem 0;
+  .navbar-links a {
+    text-align: left;
+    width: 100%;
   }
 }
